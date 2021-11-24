@@ -1,36 +1,92 @@
-/* body {background-color:tan;}
-h1{color:green;}
-
- */
-
-
- body {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #000000;
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-h2{
-	text-align: center;
+
+.calculator{
+    background: rgb(125, 124, 174);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.simple-interest {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	width: 25rem;
-	margin: 0;
-	padding: 2.5rem;
-	background-color: whitesmoke ;
-	border-radius: 0.3125rem;
-	box-shadow: 0 0 1.875rem rgba(black,0.3);
-	
-	
+
+.container{
+    background-color: #fff;
+    width: 600px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.207);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-		
-		
+
+.formulario, .form_inputs{
+    background-color: rgba(174, 157, 157, 0.303);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_inputs{
+    align-items: initial;
+}
+
+input{
+    padding-left: 20px;
+}
+
+button{
+    padding: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+    background: rgb(184, 178, 178);
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(151, 147, 147);
+}
+
+.container_rate{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_rate input{
+    width: 85%;
+}
+
+.container_rate output{
+    font-weight: bold;
+}
+
+input{
+    border-radius: 10px;
+    height: 30px;
+    outline: none;
+}
+
+.span_yellow{
+    color: yellow;
+    text-shadow: 1px 1px black;
+}
